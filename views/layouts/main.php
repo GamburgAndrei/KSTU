@@ -22,8 +22,7 @@ AppAsset::register($this);
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Mobland - Mobile App Landing Page Template">
-    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
     <?php $this->registerCsrfMetaTags() ?>
     <!-- Font -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -43,11 +42,13 @@ AppAsset::register($this);
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                     <div class="collapse navbar-collapse" id="navbar">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"> <a class="nav-link active" href="#home">Главная <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="">Главная <span class="sr-only">(current)</span></a> </li>
                             <li class="nav-item"> <a class="nav-link" href="#features">Кабинет абитуриента</a> </li>
                             <li class="nav-item"> <a class="nav-link" href="#gallery">Новости</a> </li>
-                            <li class="nav-item"> <a class="nav-link" href="#pricing">Регистрация</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="site/signup">Регистрация</a> </li>
                             <li class="nav-item"> <a class="nav-link" href="#contact">Авторизация</a> </li>
+                            <li class="nav-item"><a href="index.php?r=web">Главная страница</a></li>
+
 
                         </ul>
                     </div>
@@ -201,7 +202,7 @@ AppAsset::register($this);
 
                 </div>
             </div>
-
+            <?= $content ?>
         </div>
 
     </div>

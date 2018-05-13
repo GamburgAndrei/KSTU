@@ -21,31 +21,22 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
-
     <?php $this->head() ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
 
-
-
 <div class="wrap">
     <?php
-   NavBar::begin([
-
-
+    NavBar::begin([
+        'brandLabel' => Yii::$app->name,
+        'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-
     echo Nav::widget([
-        'options' => ['class' => 'navbar navbar-dark navbar-expand-lg'],
+        'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'About', 'url' => ['/site/about']],
@@ -65,7 +56,6 @@ AppAsset::register($this);
         ],
     ]);
     NavBar::end();
-
     ?>
 
     <div class="container">
@@ -76,7 +66,6 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 </div>
-
 
 <footer class="footer">
     <div class="container">
