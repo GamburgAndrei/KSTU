@@ -9,8 +9,8 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-
-class SiteController extends Controller
+use app\controllers\CustomController;
+class SiteController extends CustomController
 {
     /**
      * {@inheritdoc}
@@ -61,6 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $this->setMeta('Enrollee KSTU','Portal enrollee KSTU', 'Портал абитуриентов КГТУ');
         return $this->render('index');
     }
 
@@ -124,5 +125,12 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+/*Вызов страницы приветствия*/
+    public function actionGreeting(){
+        return $this->render('greeting');
+    }
+    public function actionRegistration(){
+        return $this->render('registration');
     }
 }

@@ -1,53 +1,153 @@
 <?php
-
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
 ?>
-<div class="site-index">
+<header class="bg-gradient" id="home">
+    <div class="container mt-5">
+        <h1>Портал абитуриентов КГТУ</h1>
+        <p class="tagline"> Добро пожаловать на портал абитуриентов</p>
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
     </div>
 
-    <div class="body-content">
+</header>
+
+<div class="section light-bg" id="features">
+
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h3>Здесь вы сможете:</h3>
+        </div>
+
 
         <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="col-12 col-lg-4">
+                <div class="card features">
+                    <div class="card-body">
+                        <div class="media">
+                            <span class="ti-email gradient-fill ti-5x mr-5"></span>
+                            <div class="media-body">
+                                <h4 class="card-title">Получать информацию о планируемых мероприятиях</h4>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="col-12 col-lg-4">
+                <div class="card features">
+                    <div class="card-body">
+                        <div class="media">
+                            <span class="ti-pencil-alt gradient-fill ti-5x mr-5"></span>
+                            <div class="media-body">
+                                <h4 class="card-title">Заполнить и подать заявление на зачисление в электронной форме</h4>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+            <div class="col-12 col-lg-4">
+                <div class="card features">
+                    <div class="card-body">
+                        <div class="media">
+                            <span class="ti-id-badge gradient-fill ti-5x mr-5"></span>
+                            <div class="media-body">
+                                <h4 class="card-title">Отслеживать персональную конкурсную ситуацию</h4>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
+
+
+
+</div>
+
+<div class="section" >
+
+    <div class="container" >
+        <div class="row">
+
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+
+                    <h2>Заполнить заявление для поступления в несколько шагов:</h2>
+
+                    <a href="index.php?id=8" class="btn btn-primary">Заполнить заявление</a></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div <div class="section light-bg">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 d-flex align-items-center">
+                <ul class="list-unstyled ui-steps">
+                    <li class="media">
+                        <div class="circle-icon mr-4">1</div>
+                        <div class="media-body">
+                            <h5>Зайти на страницу "Кабинет абитуриента"</h5>
+
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <div class="circle-icon mr-4">2</div>
+                        <div class="media-body">
+                            <h5>Зарегистрироваться</h5>
+
+                        </div>
+                    </li>
+                    <li class="media">
+                        <div class="circle-icon mr-4">3</div>
+                        <div class="media-body">
+                            <h5>Заполнить заявление</h5>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="light-bg py-5" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-left">
+                <p class="mb-2"> <span class="ti-location-pin mr-2"></span> Адрес: 720044 Кыргызстан, г.Бишкек, пр.Мира 66</p>
+                <div class=" d-block d-sm-inline-block">
+                    <p class="mb-2">
+                        <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:rector@kstu.kg">E-mail: rector@kstu.kg</a>
+                    </p>
+                </div>
+                <div class="d-block d-sm-inline-block">
+                    <p class="mb-0">
+                        <span class="ti-headphone-alt mr-2"></span> <a href="tel:51836362800">+996-312-54-51-62</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+        </div>
+
+    </div>
+
 </div>
